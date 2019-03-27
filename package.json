@@ -1,6 +1,6 @@
 {
   "name": "rimage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "rimage",
   "scripts": {
     "prepublishOnly": "npm run lint && npm run build",
