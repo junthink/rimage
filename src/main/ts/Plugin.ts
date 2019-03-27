@@ -1,17 +1,9 @@
 declare const tinymce: any;
 
-const setup = (editor, url) => {
-  editor.addButton('rmedia', {
-    text: 'rmedia button',
-    icon: false,
-    onclick: () => {
-      // tslint:disable-next-line:no-console
-      editor.setContent('<p>content added from rmedia</p>');
-    }
-  });
-};
+import Buttons from './ui/Buttons';
 
-tinymce.PluginManager.add('rmedia', setup);
+tinymce.PluginManager.add('rimage', function (editor) {
+    Buttons.register(editor);
+});
 
-// tslint:disable-next-line:no-empty
-export default () => {};
+export default function () { }
