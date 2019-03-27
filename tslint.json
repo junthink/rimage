@@ -3,8 +3,10 @@
   "extends": [
       "@ephox/tslint-rules/tslint.json"
   ],
-  "prefer-const": false,
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "prefer-const": false,
+    "no-empty": false
+  },
   "rulesDirectory": []
 }

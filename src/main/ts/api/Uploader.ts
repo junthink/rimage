@@ -1,9 +1,9 @@
-import { File, FileList, document, FileReader } from '@ephox/dom-globals';
+import {File, FileList, document, FileReader} from '@ephox/dom-globals';
 
 export class Uploader {
     /** 选择文件 */
-    public selectFile(accept = 'image/*', multiple = true): Promise<File | FileList> {
-        return new Promise<File | FileList>((resolve: any) => {
+    public selectFile(accept = 'image/*', multiple = true): Promise<FileList> {
+        return new Promise<FileList>((resolve: any) => {
             const inputEl = document.createElement('input');
             inputEl.accept = accept;
             inputEl.multiple = multiple;
@@ -26,6 +26,7 @@ export class Uploader {
             reader.readAsDataURL(file);
         });
     }
+
     /**获取多张base64图片 */
     public async selectBase64Images(maxsize?: number): Promise<string[]> {
         const files: FileList = await this.selectFile('images/*', false) as FileList;

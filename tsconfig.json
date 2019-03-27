@@ -11,6 +11,8 @@
     "outDir": "lib",
     "baseUrl": "."
   },
+  "prefer-const": false,
+  "no-empty": false,
   "include": [
     "src/demo/ts",
     "src/main/ts",
