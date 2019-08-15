@@ -21,10 +21,12 @@ const setup = (editor, url) => {
                             method: 'post',
                             data: form
                         }).then((resData) => {
+                            console.log('==============');
                             const image =  editor.dom.get(imageId);
-                            image.src = resData.data.data.image_url;
+                            image.src = resData.data.image_url;
+                            image.setAttrib('author','rongcat');
                         }).catch((err) => {
-                            // console.log(err);
+                            console.log(err);
                         });
                     });
                 }
