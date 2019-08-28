@@ -1,6 +1,6 @@
 {
   "name": "rimage",
-  "version": "1.0.5",
+  "version": "2.0.8",
   "description": "rimage",
   "scripts": {
     "prepublishOnly": "npm run lint && npm run build",
@@ -17,12 +17,11 @@
     "@ephox/bedrock": "latest",
     "@ephox/mcagar": "latest",
     "@ephox/swag": "latest",
-    "@ephox/tslint-rules": "latest",
     "axios": "^0.18.0",
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-webpack-server": "^0.1.0",
-    "@ephox/tslint-rules": "latest",
+    "@ephox/tslint-rules": "1.0.9",
     "awesome-typescript-loader": "^5.2.1",
     "grunt": "^1.0.3",
     "grunt-contrib-clean": "^2.0.0",
